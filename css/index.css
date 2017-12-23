@@ -1,16 +1,9 @@
-/*
-+---------------------------------------+
-|                                       |
-|  Author : Akshay L. Aradhya           |
-|  Website : https://dollarakshay.com/  |
-|                                       |
-+---------------------------------------+
-*/
 
+/*Page Styles*/
 
-/* --------------------------------------
-    Index Page Styles
--------------------------------------- */
+.dynamic-content {
+    display:none;
+}
 
 #navbar {
     position: fixed;
@@ -68,15 +61,15 @@
 }
 
 #navbar-links > div:hover::before {
-    border-top-color: #5bf593;
-    border-right-color: #52de86;
+    border-top-color: #f44336;
+    border-right-color: #f44336;
     -webkit-transition: width 0.25s ease-out, height 0.2s ease-out 0.25s;
     transition: width 0.25s ease-out, height 0.2s ease-out 0.25s;
 }
 
 #navbar-links > div:hover::after {
-    border-bottom-color: #4aaff7;
-    border-left-color: #439cdc;
+    border-bottom-color: #ffffff;
+    border-left-color: #ffffff;
     left: 0;
     -webkit-transition: left 0.25s ease-out 0.3s, border-color 0s ease-out 0.3s, width 0.25s ease-out 0.3s, height 0.1s ease-out 0.55s;
     transition: left 0.25s ease-out 0.3s, border-color 0s ease-out 0.3s, width 0.25s ease-out 0.3s, height 0.1s ease-out 0.55s;
@@ -125,8 +118,14 @@
     height: 66%;
 }
 
+@font-face {
+    font-family: FaultStars;
+    src: url(../fonts/EraserRegular.ttf);
+}
+
 #banner-text > h1 {
     display: none;
+    font-family: FaultStars;
 }
 
 #banner-text > h2 {
@@ -157,11 +156,11 @@
 
 #div-2-inner img {
     width: 100%;
-    min-width: 400px;
+    max-width: 400px;
 }
 
 .about-text {
-    min-width: 300px;
+    min-width: 100px;
 }
 
 .underline-blue {
