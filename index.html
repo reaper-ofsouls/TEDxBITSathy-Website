@@ -52,8 +52,9 @@
     <div id="banner" class="d-flex flex-column justify-content-start container-fluid bg-dark">
         <canvas id="canvas"></canvas>
         <div id="banner-text">
-            <h1 class="center  light-text theme"> The Secret Ingredient </h1></br></br>
-            <div class="center">
+            <h1 class="center  light-text theme"> The Secret Ingredient </br> <span style="font-size: 0.8em;"> February 9 </span></h1>
+            
+            <div class="center"></h1></br></br>
                 <button onclick="popup('tedxbitsathy-the-secret-ingredient-404343');" class="tsbutton" style="width: 100px; max-width: 100%;">Register Now</button>
             </div>
         </div>
@@ -73,7 +74,6 @@
                     TED is a US based not-for-profit enterprise devoted to the propagation of their theme "Ideas Worth Spreading". TED started out in 1984 as a conference bringing together people from three worlds: Technology, Entertainment & Design. TED has ever since grown to support those world-changing ideas with multiple initiatives. The annual TED Conference invites the world’s leading thinkers and doers to speak for 18 minutes. Their talks are then made available, free, at TED.com
                 </p>
 
-                <button type="button" class="btn pycon-button center">Read More</button>
             </div>
             <div class="mt-5 m-sm-4 d-flex flex p-4 flex-column">
                 <img src="./images/TED/ted-logo.png">
@@ -92,10 +92,9 @@
                 <p class="mb-4" style="text-align: justify;">
                     In the spirit of ideas worth spreading, TEDx is a program of local, self-organised events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organised events are branded TEDx, where x denotes that it is an independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organised.
                 </p>
-
-                <button type="button" class="btn pycon-button center">Read More</button>
             </div>
         </div>
+        
         <div id="div-2-inner" class="container p-0 p-sm-2 d-flex flex-row flex-wrap-reverse">
             <div class="mt-5 m-sm-4 d-flex flex flex-column about-text">
                 <h2 class="small-caps center"> About TEDxBITSathy </h2>
@@ -105,13 +104,12 @@
                 <p class="mb-4" style="text-align: justify;">
                     TEDxBITSathy is an active TEDx Community with people from different ideas, working together to spread ideas that make an impact in the society. TEDxBITSathy is organized at Bannari Amman Institute of Technology. We have so far organized 2 TEDx events(TEDxBITSathy Breaking the Stereotype, TEDxBITSathy Unmasking the Anonymous) and 1 TEDx broadcast event. TEDxBITSathy event will be the 4th event to be organized by our community. TEDxBITSATHY is also on the list of notable TEDx events in Wikipedia.
                 </p>
-
-                <button type="button" class="btn pycon-button center">Read More</button>
             </div>
             <div class="mt-5 m-sm-4 d-flex flex p-4 flex-column">
                 <img src="./images/TED/TEDxBITSathy1.png">
             </div>
         </div>
+
     </div>
 
     <!-- Venue -->
@@ -172,28 +170,6 @@
     <script src="js/index.js"></script>
     <script src="js/index_canvas.js"></script>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript">
-        // Parse the URL parameter
-        function getParameterByName(name, url) {
-            if (!url) url = window.location.href;
-            name = name.replace(/[\[\]]/g, "\\$&");
-            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-                results = regex.exec(url);
-            if (!results) return null;
-            if (!results[2]) return '';
-            return decodeURIComponent(results[2].replace(/\+/g, " "));
-        }
-        // Give the parameter a variable name
-        var dynamicContent = getParameterByName('dc');
-     
-         $(document).ready(function() {
-     
-            // Check if the URL parameter is apples
-            if (dynamicContent == 'tamil') {
-                $('#tamil').show();
-            } 
-        });
-    </script>
 
 </body>
 
